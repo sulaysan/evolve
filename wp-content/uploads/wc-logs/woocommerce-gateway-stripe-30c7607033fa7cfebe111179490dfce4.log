@@ -1,0 +1,154 @@
+04-18-2017 @ 12:58:49 - Your domain has been verified with Apple Pay!
+05-03-2017 @ 20:11:12 - Info: Begin processing payment for order 222 for the amount of 2500.00
+05-03-2017 @ 20:11:12 - charges request: Array
+(
+    [currency] => usd
+    [amount] => 250000
+    [description] => Evolve - Order 222
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => Sulay Santander
+            [Customer Email] => sulay.santander@all-techolsutions.com
+        )
+
+    [source] => tok_1AFToZLjcF5mE7wr7YHoy47O
+)
+
+05-03-2017 @ 20:11:13 - Processing response: stdClass Object
+(
+    [id] => ch_1AFTobLjcF5mE7wraW4uRlub
+    [object] => charge
+    [amount] => 250000
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1AFTobLjcF5mE7wroiMcChgq
+            [object] => balance_transaction
+            [amount] => 250000
+            [available_on] => 1494374400
+            [created] => 1493842273
+            [currency] => usd
+            [description] => Evolve - Order 222
+            [fee] => 7280
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 7280
+                            [application] => 
+                            [currency] => usd
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 242720
+            [source] => ch_1AFTobLjcF5mE7wraW4uRlub
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1AFTobLjcF5mE7wraW4uRlub
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1493842273
+    [currency] => usd
+    [customer] => 
+    [description] => Evolve - Order 222
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => Sulay Santander
+            [Customer Email] => sulay.santander@all-techolsutions.com
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1AFTobLjcF5mE7wraW4uRlub/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1AFToZLjcF5mE7wr6Z4dQCfB
+            [object] => card
+            [address_city] => Avntura
+            [address_country] => VE
+            [address_line1] => 20533 Biscayne Blvd #101
+            [address_line1_check] => pass
+            [address_line2] => 
+            [address_state] => FL
+            [address_zip] => 33180
+            [address_zip_check] => pass
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 12
+            [exp_year] => 2018
+            [fingerprint] => vcTDtuE3WRbHFRDO
+            [funding] => unknown
+            [last4] => 1111
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => Sulay Santander
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+05-03-2017 @ 20:11:13 - Success: Stripe charge complete (Charge ID: ch_1AFTobLjcF5mE7wraW4uRlub)

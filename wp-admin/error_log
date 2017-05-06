@@ -1,0 +1,7 @@
+
+[05-May-2017 01:35:38 UTC] PHP Notice:  Undefined variable: sb_instagram_follow_btn_position in /home/enigmacs/public_html/evolve/wp-content/plugins/instagram-feed/instagram-feed-admin.php on line 586
+[05-May-2017 01:35:38 UTC] PHP Notice:  Undefined variable: sb_instagram_follow_btn_position in /home/enigmacs/public_html/evolve/wp-content/plugins/instagram-feed/instagram-feed-admin.php on line 587
+[05-May-2017 01:36:08 UTC] PHP Notice:  Undefined variable: sb_instagram_follow_btn_position in /home/enigmacs/public_html/evolve/wp-content/plugins/instagram-feed/instagram-feed-admin.php on line 586
+[05-May-2017 01:36:08 UTC] PHP Notice:  Undefined variable: sb_instagram_follow_btn_position in /home/enigmacs/public_html/evolve/wp-content/plugins/instagram-feed/instagram-feed-admin.php on line 587
+[05-May-2017 16:01:11 UTC] PHP Parse error:  syntax error, unexpected ''img'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/enigmacs/public_html/evolve/wp-content/themes/_evolve/admin/course/widget.php on line 216
+[05-May-2017 16:01:16 UTC] PHP Parse error:  syntax error, unexpected ''img'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/enigmacs/public_html/evolve/wp-content/themes/_evolve/admin/course/widget.php on line 216

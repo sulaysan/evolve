@@ -1,0 +1,89 @@
+.ares.tparrows {
+	cursor:pointer;
+	background:rgba(##bg-color##);
+	min-width:##bg-size##px;
+    min-height:##bg-size##px;
+	position:absolute;
+	display:block;
+	z-index:100;
+    border-radius:50%;
+}
+.ares.tparrows:hover {
+}
+.ares.tparrows:before {
+	font-family: "revicons";
+	font-size:##arrow-size##px;
+	color:rgba(##arrowcolor##);
+	display:block;
+	line-height: ##bg-size##px;
+	text-align: center;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+    z-index:2;
+    position:relative;
+}
+.ares.tparrows.tp-leftarrow:before {
+	content: "\e81f";
+}
+.ares.tparrows.tp-rightarrow:before {
+	content: "\e81e";
+}
+.ares.tparrows:hover:before {
+ color:rgb(##hover-arrow-color##);
+      }
+.tp-title-wrap { 
+  position:absolute;
+  z-index:1;
+  display:inline-block;
+  background:rgba(##bg-color##);
+  min-height:##bg-size##px;
+  line-height:##bg-size##px;
+  top:0px;
+  margin-left:30px;
+  border-radius:0px 30px 30px 0px;
+  overflow:hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transform:scalex(0);  
+  -webkit-transform:scalex(0);  
+  transform-origin:0% 50%; 
+   -webkit-transform-origin:0% 50%;
+}
+ .ares.tp-rightarrow .tp-title-wrap { 
+   right:0px;
+   margin-right:30px;margin-left:0px;
+   -webkit-transform-origin:100% 50%;
+border-radius:30px 0px 0px 30px;
+ }
+.ares.tparrows:hover .tp-title-wrap {
+	transform:scalex(1) scaley(1);
+  	-webkit-transform:scalex(1) scaley(1);
+}
+.ares .tp-arr-titleholder {
+  position:relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transform:translatex(200px);  
+  text-transform:uppercase;
+  color:rgb(##hover-title-color##);
+  font-weight:400;
+  font-size:14px;
+  line-height:60px;
+  white-space:nowrap;
+  padding:0px 20px;
+  margin-left:10px;
+  opacity:0;
+}
+
+.ares.tp-rightarrow .tp-arr-titleholder {
+   transform:translatex(-200px); 
+   margin-left:0px; margin-right:10px;
+      }
+
+.ares.tparrows:hover .tp-arr-titleholder {
+   transform:translatex(0px);
+   -webkit-transform:translatex(0px);
+  transition-delay: 0.1s;
+  opacity:1;
+}
