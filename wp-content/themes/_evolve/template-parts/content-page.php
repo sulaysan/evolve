@@ -15,6 +15,7 @@
 	</header--><!-- .entry-header -->
 
 	<div class="entry-content">
+		<div class="inner-content">
 		<?php
 			the_content();
 
@@ -23,6 +24,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+	</div>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>

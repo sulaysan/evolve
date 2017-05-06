@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-
+<?php the_field('revolution_slider'); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
