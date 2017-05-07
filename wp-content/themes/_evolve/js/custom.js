@@ -3,7 +3,7 @@
  *
  */
 (function ($) {
-    
+
     // Menu flotante
     $(window).scroll(function() {
         if ($(document).scrollTop() > 50) {
@@ -12,7 +12,7 @@
             $('#site-navigation').removeClass('shrink');
         }
     });
-    
+
     // Hover en Submenu
     /*
     $('.dropdown').click(function(e) {
@@ -21,13 +21,26 @@
     });
 
     $('.dropdown').hover(function(){
-        $('.dropdown-toggle', this).trigger('click'); 
+        $('.dropdown-toggle', this).trigger('click');
     });
     */
-    
+
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
     });
+
+
+
+
+    $(document).ready(function(){
+        $(".chat-icon,.plus").click(function(){
+            $(".person_info").fadeToggle();
+            $('.plus').fadeToggle();
+        });
+    });
+
+
+
 
     // ScrollReveal
     //window.sr = ScrollReveal();
@@ -43,24 +56,24 @@
     $("#home-carousel").bootslider({
         // snap to item
 	snapToItem: true
-        
+
         // CSS selectors for next / prev links
 	//next: false,
 	//previous: false
     });
-   
+
     $( "#courses-carousel" ).bootslider({
         snapToItem: true,
-        next:  "#coursesnext", 
+        next:  "#coursesnext",
         previous: "#coursesprevious"
     });
-    
+
     $( "#instructors-carousel" ).bootslider({
         snapToItem: true,
-        next:  '#instructorsnext', 
+        next:  '#instructorsnext',
         previous: '#instructorsprevious'
     });
-    
+
     // hover instagram photos
     var observer = new MutationObserver(function (mutations, me) {
         // `mutations` is an array of mutations that occurred
@@ -73,19 +86,19 @@
         //}
         $('#sb_instagram .sbi_photo_wrap').each(function(){
             //$( this ).append( $( "<span></span>" ) );
-            
+
             $( this ).hover(
                 function(){
                     $(this).children('.sbi_photo').css("background-color","rgba(0,0,0,1)");
                     $( this ).append( "<div class=\"instagram-overlay\"><span></span></div>" );
-                    
+
                     //$(this).css({ marginTop: '60px', display: 'inline-block' });
                     //jQuery(this).fadeTo(200,0.85)
                 },
                 function(){
                     $(this).children('.sbi_photo').css("background-color","");
                     $( this ).find( ".instagram-overlay" ).remove();
-                    
+
                     //$( this ).find( "span:last" ).remove();
                     //jQuery(this).stop().fadeTo(500,1)
             });
@@ -95,44 +108,44 @@
             me.disconnect(); // stop observing
         });
     });
-    
+
     // start observing
     observer.observe(document, {
       childList: true,
       subtree: true
     });
-    
+
     // Down Indicator
     //$('.rev_slider_wrapper').append( "<span class=\"btn-down\">Scroll</span>" );
-    
+
     /*
     $(".btn-down").each(function(){
         var gt = $(this);
         var scrollTop = 0;
         //gt.hide();
-        
+
         $(window).scroll(function(){
             if ($(window).height() < $("body").height()) {
                 if ( $(window).scrollTop() >= ($("body").height() - $(window).height()) )
                     gt.addClass("hide");
-                else 
+                else
                     gt.removeClass("hide");
             }
         });
 
         $(window).bind("resize load", function(){
             if ($(window).height() < $("body").height()) {
-                
+
                 if ( $(window).scrollTop() >= ($("body").height() - $(window).height()) )
                     gt.addClass("hide");
-                else 
+                else
                     gt.removeClass("hide");
-                    
+
             }
         });
     });
     */
-    
+
     // Top Indicator
     $("#btn-top").each(function(){
         var gt = $(this);
@@ -159,7 +172,7 @@
     //$( ".woocommerce .woocommerce-ordering select" ).wrap( "<span class=\"select-wrapper\"></span>" );
     //$( ".variations_form select, .woocommerce-ordering select" ).wrap( "<span class=\"select-wrapper\"></span>" );
     $( ".woocommerce-ordering select" ).wrap( "<span class=\"select-wrapper\"></span>" );
-    
+
     $('<div class="quantity-nav"><div class="quantity-button quantity-up fa fa-angle-up">&nbsp;</div><div class="quantity-button quantity-down fa fa-angle-down">&nbsp;</div></div>').insertAfter('.quantity input');
     $('.quantity').each(function() {
         var spinner = $(this),
@@ -192,7 +205,7 @@
             spinner.find("input").trigger("change");
         });
     });
-      
+
 }(jQuery));
 
 (function(){
@@ -205,7 +218,7 @@
     }
 
     window.sr = new ScrollReveal(config);
-    
+
     var hero = {
         origin   : "top",
         distance : "24px",
@@ -233,8 +246,8 @@
         reset: true,
         viewOffset: { top: 64 }
       }
-      
+
     sr.reveal(".scrollreveal", block);
     sr.reveal("#sb_instagram", block);
-    
+
 })()

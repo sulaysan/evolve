@@ -29,7 +29,32 @@
 
     <!--a href="#" class="btn-down">Scroll</a-->
     <span class="btn-down">Scroll</span>
-    <a class="chat-icon" data-toggle="tooltip" data-placement="left" title="Contact Us +999999"><span></span></a>
+  <!--  <a class="chat-icon" data-toggle="tooltip" data-placement="left" title="Contact Us +999999"><span></span></a>-->
+
+  <?php
+
+  if(get_field('contact_person'))
+  {
+  	?>
+
+    <div class="wrap-chat">
+              <div class="person_info">
+                     <p>
+                       <span class="person message"><?php the_field('person_message'); ?></span>
+                        <span class="person name"><br> <?php the_field('person_name'); ?></span>
+                            <br><span class="person title"> <?php the_field('person_title'); ?></span>
+                            <br> <span class="person number"> <?php the_field('person_number'); ?> </span>
+                            <br> <span class="person email"><a href=mailto:"<?php echo the_field('person_email'); ?>"> <?php the_field('person_email'); ?> </a> </span>
+
+                    </p>
+              </div>
+        <span class="plus"></span>
+        <a class="chat-icon" style="background-image: url(<?php the_field('person_photo') ?>);" ></a>
+    </div>
+<?
+  }
+
+  ?>
 
 	<!--a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_evolve' ); ?></a-->
 
@@ -189,4 +214,4 @@
 
     <div id="content" class="site-content row">
 
-        <?php  do_action('_evolve_woocommerce_breadcrumb'); ?>
+        <?php _evolve_breadcrumbs(); ?>
