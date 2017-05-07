@@ -50,10 +50,10 @@
                                 <?php endif; ?>
                                 </a>
                         <?php endif; ?>
-			
+
 		</div>
-                    
-                    
+
+
 		<!--div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
@@ -78,10 +78,10 @@
 		</nav><!-- #site-navigation -->
 		*/
 		?>
-		
+
 		<nav id="site-navigation" class="main-navigation navbar navbar-default" role="navigation">
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
-                        
+
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
                                 <span class="sr-only"><?php _e('Toggle navigation', '_s'); ?></span>
@@ -115,11 +115,11 @@
                                 </ul>
 
                                 <?php //get_search_form(); ?>
-            
+
 			</div><!-- /.navbar-collapse -->
 
 		</nav><!-- #site-navigation -->
-		
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

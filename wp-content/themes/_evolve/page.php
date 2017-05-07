@@ -32,7 +32,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php the_field('extra_codes'); ?>
 <?php
 //get_sidebar();
 get_footer();

@@ -916,6 +916,10 @@ p:empty {
 	width: 1440px;
 }
 }
+svg.logo {
+	max-width: 150px;
+padding-top: 5px;
+}
 .site-logo {
 	float: left;
 	opacity: 0.75;
