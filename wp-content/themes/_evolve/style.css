@@ -898,7 +898,7 @@ p:empty {
 	padding-left: 0px;
 	background-color: #FFF;
 }
-.home .site.container, .page-rent .site.container, .page-academy-classes .site.container, .page-about .site.container {
+.home .site.container, .page-rent .site.container, .page-academy .site.container, .page-about .site.container {
 	background-color: transparent;
 	background: url(images/bg_three.jpg);
 }
