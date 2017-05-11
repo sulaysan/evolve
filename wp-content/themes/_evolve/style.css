@@ -898,7 +898,7 @@ p:empty {
 	padding-left: 0px;
 	background-color: #FFF;
 }
-.home .site.container, .page-rent .site.container, .page-academy-classes .site.container, .page-about .site.container {
+.home .site.container, .page-rent .site.container, .page-academy .site.container, .page-about .site.container {
 	background-color: transparent;
 	background: url(images/bg_three.jpg);
 }
@@ -915,6 +915,10 @@ p:empty {
 .container {
 	width: 1440px;
 }
+}
+svg.logo {
+	max-width: 150px;
+padding-top: 5px;
 }
 .site-logo {
 	float: left;
@@ -1012,23 +1016,56 @@ p:empty {
 }
 a.chat-icon {
 	display: block;
-	position: absolute;
-	right: 30px;
-	top: 420px;
 	z-index: 500;
 	width: 107px;
 	height: 107px;
-	background: url("images/Oval.png");
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background-size: contain;
+	background-position: center center;
+}
+.wrap-chat {
+	display: block;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	z-index: 996;
+	width: 107px;
+	height: 107px;
 	cursor: pointer;
 }
-a.chat-icon span {
+.plus {
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
 	width: 33px;
 	height: 33px;
-	z-index: 600;
+	z-index: 997;
 	background: url("images/plus.png");
+}
+.person_info {
+	display: none;
+	max-width: 600px;
+max-height: 200px;
+padding: 20PX;
+z-index: 999;
+background-color: rgba(0, 0, 0, 0.9);
+overflow: hidden;
+position: absolute;
+right: 120px;
+bottom: 0px;
+color: #fff;
+width: 300px;
+}
+.person.message {
+	font-size: 18px;
+	font-weight: bold;
+}
+.person_info a {
+	color: #fff;
 }
 a.chat-icon {
 	visibility: hidden;
