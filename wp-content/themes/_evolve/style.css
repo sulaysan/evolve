@@ -597,9 +597,8 @@ nav.navbar.shrink {
 .breadcrumb a:hover, .breadcrumb a:active, .breadcrumb a:focus {
 	color: #FFF;
 }
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
+
+
 #menu-main {
 	position: absolute;
 	bottom: 0;
@@ -620,14 +619,11 @@ nav.navbar.shrink {
 .menu-main-container ul:first-child {
 	padding-left: 40px;
 	padding-right: 40px;
-	border-style: solid;
-	border-width: 0px 0px 1px;
-	border-color: transparent;
-	-moz-border-image: url(images/Line.png) 0 0 1 stretch;
-	-webkit-border-image: url(images/Line.png) 0 0 1 stretch;
-	-o-border-image: url(images/Line.png) 0 0 1 stretch;
-	border-image: url(images/Line.png) 0 0 1 stretch;
+
 }
+}
+#menu-main li.menu-item{
+	position: static!important;
 }
 #menu-main.navbar-nav > li > a {
 	color: #FFF;
@@ -638,7 +634,7 @@ nav.navbar.shrink {
 	border-width: 0px 0px 2px;
 	border-color: transparent;
 }
-/* mosca */
+/*
 #menu-main.navbar-nav > li > a:hover, #menu-main.navbar-nav > li.current-menu-item > a {
 	color: #FFF;
 	background-color: transparent;
@@ -650,8 +646,9 @@ nav.navbar.shrink {
 	-o-border-image: url(images/separators.png) 0 0 2 stretch;
 	border-image: url(images/separators.png) 0 0 2 stretch;
 }
+*/
  @media (min-width: 1280px) {
-/*#menu-main.navbar-nav > li > a:focus, */
+#menu-main.navbar-nav > li > a:focus,
 
 }
 @media (max-width: 980px) {
@@ -759,7 +756,9 @@ nav.navbar.shrink {
 .menu-toggle, .main-navigation.toggled ul {
 	display: block;
 }
-/* Example One */
+/* Example One
+
+
 #menu-main {
 	margin: 0 auto;
 	list-style: none;
@@ -772,21 +771,21 @@ nav.navbar.shrink {
 #menu-main a {
 	color: #bbb;
 	font-size: 14px;
-	float: left;
+
 	padding: 6px 10px 4px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 #menu-main a:hover {
 	color: white;
-}
+}*/
 #magic-line {
 	position: absolute;
 	bottom: -2px;
-	left: 0;
-	width: 100px;
+	left: 0px;
+	width: 5px;
 	height: 2px;
-	background: #fe4902;
+	background: #fff;
 }
 .current_page_item a {
 	color: white !important;

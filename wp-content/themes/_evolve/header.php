@@ -21,10 +21,8 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-<?php wp_head(); ?>
 
-<script src='js/jquery.color-RGBa-patch.js'></script>
-<script src='js/example.js'></script>
+<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -105,8 +103,8 @@
                                         //'container'         =>  'div',
                                         //'container_class'   =>  'navbar-collapse collapse dropdown',
                                         //'container_id'      => 'navbar-collapse-main',
-
-                                        'menu_class'        =>  'nav navbar-nav navbar-left',
+                                        'menu_id' => 'menu-main',
+                                        'menu_class'        =>  'group nav navbar-nav navbar-left',
 
                                         'walker'          => new Bootstrap_Nav_Menu(),
                                     ) );

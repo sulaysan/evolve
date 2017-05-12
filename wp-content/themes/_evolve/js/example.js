@@ -20,7 +20,7 @@ $(function() {
         .data("origLeft", $magicLine.position().left)
         .data("origWidth", $magicLine.width());
 
-    $("#example-one li").find("a").hover(function() {
+    $("#menu-main li").find("a").hover(function() {
         $el = $(this);
         leftPos = $el.position().left;
         newWidth = $el.parent().width();
@@ -35,6 +35,10 @@ $(function() {
             width: $magicLine.data("origWidth")
         });
     });
+
+
+
+
     /*
         EXAMPLE TWO
     */

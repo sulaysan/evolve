@@ -49,19 +49,19 @@
 				'after'  => '</div>',
 			) );
 		?>
-            
+
             <div class="inner-content home-learn row scrollreveal">
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Learn Area Home") ) : ?>
             <?php endif;?>
             </div>
-            
+
             <div class="inner-content">
                 <div class="instagram-title">Instagram Feed<br>@evolve_academy</div>
             </div>
             <div class="inner-content">
                 <?php echo do_shortcode('[instagram-feed id="1298469698" num=8 cols=4 showfollow=false]')?>
             </div>
-            
+
 	</div><!-- .entry-content -->
 
 	<!--footer class="entry-footer">
