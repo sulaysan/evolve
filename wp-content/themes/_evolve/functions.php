@@ -75,7 +75,7 @@ function _evolve_setup() {
 		'quote',
 		'link',
 	) );
-	
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( '_evolve_custom_background_args', array(
 		'default-color' => 'ffffff', //TODO: c5c5c5
@@ -115,7 +115,7 @@ function _evolve_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-        
+
         register_sidebar( array(
 		'name'          => esc_html__( 'Footer 1', '_evolve' ),
 		'id'            => 'footer-area-1',
@@ -124,7 +124,7 @@ function _evolve_widgets_init() {
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
-        
+
         register_sidebar( array(
 		'name'          => esc_html__( 'Footer 2', '_evolve' ),
 		'id'            => 'footer-area-2',
@@ -133,7 +133,7 @@ function _evolve_widgets_init() {
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
-        
+
         register_sidebar( array(
 		'name'          => esc_html__( 'Footer 3', '_evolve' ),
 		'id'            => 'footer-area-3',
@@ -142,7 +142,7 @@ function _evolve_widgets_init() {
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
-        
+
 }
 add_action( 'widgets_init', '_evolve_widgets_init' );
 
@@ -152,13 +152,12 @@ add_action( 'widgets_init', '_evolve_widgets_init' );
 function _evolve_scripts() {
 	//wp_enqueue_style( '_evolve-style', get_stylesheet_uri() );
 	//wp_enqueue_script( '_evolve-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-        
 	wp_enqueue_script( '_evolve-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-        
+
         wp_enqueue_script( 'scrollreveal', get_template_directory_uri() . '/js/scrollreveal.min.js', array(), '3.3.4', false );
 }
 add_action( 'wp_enqueue_scripts', '_evolve_scripts' );
@@ -214,17 +213,17 @@ require get_template_directory() . '/inc/shortcodes.php';
 require get_template_directory() . '/inc/woocommerce.php';
 
 /*
-function _s_wrapper_start() {  
+function _s_wrapper_start() {
     echo '<div id="primary" class="content-area">';
 }
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );  
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 add_action( 'woocommerce_before_main_content', '_evolve_wrapper_start', 10 );
 
-function _s_wrapper_end() {  
+function _s_wrapper_end() {
     echo '</div>';
 }
-remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );  
-add_action( 'woocommerce_after_main_content', '_evolve_wrapper_end', 10 );  
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
+add_action( 'woocommerce_after_main_content', '_evolve_wrapper_end', 10 );
 */
 /** woocomerce integration */
 
@@ -237,7 +236,7 @@ define( 'CT_ADMIN_DIR', get_template_directory() . '/admin' );
 require_once( get_template_directory() . '/admin/main.php');
 
 /**
- * Hooks the WP cpt_post_types filter 
+ * Hooks the WP cpt_post_types filter
  *
  * @param array $post_types An array of post type names that the templates be used by
  * @return array The array of post type names that the templates be used by

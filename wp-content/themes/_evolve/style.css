@@ -759,6 +759,53 @@ nav.navbar.shrink {
 .menu-toggle, .main-navigation.toggled ul {
 	display: block;
 }
+/* Example One */
+#menu-main {
+	margin: 0 auto;
+	list-style: none;
+	position: relative;
+	width: 960px;
+}
+#menu-main li {
+	display: inline-block;
+}
+#menu-main a {
+	color: #bbb;
+	font-size: 14px;
+	float: left;
+	padding: 6px 10px 4px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#menu-main a:hover {
+	color: white;
+}
+#magic-line {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100px;
+	height: 2px;
+	background: #fe4902;
+}
+.current_page_item a {
+	color: white !important;
+}
+.ie6 #menu-main li, .ie7 #menu-main li {
+	display: inline;
+}
+.ie6 #menu-main {
+	bottom: -3px;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 37.5em) {
 .menu-toggle {
 	display: none;

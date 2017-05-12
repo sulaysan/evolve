@@ -22,6 +22,9 @@
 <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 <?php wp_head(); ?>
+
+<script src='js/jquery.color-RGBa-patch.js'></script>
+<script src='js/example.js'></script>
 </head>
 
 <body <?php body_class(); ?>>
