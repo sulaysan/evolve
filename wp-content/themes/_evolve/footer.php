@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer row" role="contentinfo">
             <div class="container-fluid">
-                
+
                 <div class="col-sm-8">
                     <?php if ( is_active_sidebar( 'footer-area-1' ) ) : ?>
                         <?php dynamic_sidebar( 'footer-area-1' ); ?>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="footer-social-container col-sm-4">
 
-                    <?php 
+                    <?php
                         $facebook=get_theme_mod( 'social_facebook', '' );
                         $twitter=get_theme_mod( 'social_twitter', '' );
                         $google_plus=get_theme_mod( 'social_google', '' );
@@ -71,14 +71,14 @@
                             <span class="sep"> | </span>
                             <?php printf( esc_html__( 'Theme: %1$s by %2$s.', '_evolve' ), '_evolve', '<a href="https://automattic.com/" rel="designer">ATS & Enigma</a>' ); ?>
                     </div--><!-- .site-info -->
-                    
+
             </div>
-            
+
             <!--a href="#top" class="go-top">top</a-->
             <p id="btn-top" class=""><a href="#" class="go-top"></a></p>
 
 	</footer><!-- #colophon -->
-        
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

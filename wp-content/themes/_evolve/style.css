@@ -393,7 +393,7 @@ nav.navbar.shrink {
 	top: 0px;
 }
 nav.navbar.shrink .navbar-container {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.9);
 }
 .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent
@@ -415,6 +415,7 @@ nav.navbar.shrink .navbar-container {
 	background-color: transparent;
 	background-color: rgba(0, 0, 0, 0.25);
 	min-width: auto;
+	left: auto;
 }
 .dropdown-menu > li > a {
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -781,11 +782,19 @@ nav.navbar.shrink {
 }*/
 #magic-line {
 	position: absolute;
-	bottom: -2px;
+	bottom: 0px;
 	left: 0px;
 	width: 5px;
 	height: 2px;
-	background: #fff;
+background: rgba(64,181,244,1);
+background: -moz-linear-gradient(left, rgba(64,181,244,1) 0%, rgba(26,67,230,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(64,181,244,1)), color-stop(100%, rgba(26,67,230,1)));
+background: -webkit-linear-gradient(left, rgba(64,181,244,1) 0%, rgba(26,67,230,1) 100%);
+background: -o-linear-gradient(left, rgba(64,181,244,1) 0%, rgba(26,67,230,1) 100%);
+background: -ms-linear-gradient(left, rgba(64,181,244,1) 0%, rgba(26,67,230,1) 100%);
+background: linear-gradient(to right, rgba(64,181,244,1) 0%, rgba(26,67,230,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40b5f4', endColorstr='#1a43e6', GradientType=1 );
+
 }
 .current_page_item a {
 	color: white !important;
@@ -1136,7 +1145,7 @@ a.chat-icon {
 }
 a.btn-down, span.btn-down {
 	position: absolute;
-	top: 420px;
+	top: 500px;
 	right: 20px;
 	bottom: inherit;
 	left: inherit;
