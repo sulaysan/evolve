@@ -74,9 +74,6 @@
 
             </div>
 
-            <!--a href="#top" class="go-top">top</a-->
-            <p id="btn-top" class=""><a href="#" class="go-top"></a></p>
-
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
