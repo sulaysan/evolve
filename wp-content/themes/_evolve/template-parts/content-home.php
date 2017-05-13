@@ -55,7 +55,7 @@
             <?php endif;?>
             </div>
 
-            <div class="inner-content">
+            <div id="instagram-home" class="inner-content">
                 <div class="instagram-title">Instagram Feed<br>@evolve_academy</div>
             </div>
             <div class="inner-content">

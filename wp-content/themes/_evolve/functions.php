@@ -58,8 +58,8 @@ function _evolve_setup() {
 	 */
 	add_theme_support( 'html5', array(
 		'search-form',
-		'comment-form',
-		'comment-list',
+	//	'comment-form',
+	//	'comment-list',
 		'gallery',
 		'caption',
 	) );
@@ -157,7 +157,9 @@ function _evolve_scripts() {
 	//wp_enqueue_style( '_evolve-style', get_stylesheet_uri() );
 	//wp_enqueue_script( '_evolve-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( '_evolve-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+	/**
+	 * comments
+	 */
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -250,3 +252,23 @@ function _evolve_cpt_post_types( $post_types ) {
     return $post_types;
 }
 add_filter( 'cpt_post_types', '_evolve_cpt_post_types' );
+/**
+* disable divi projects
+*/
+if ( ! function_exists( ‘et_pb_register_posttypes’ ) ) :
+function et_pb_register_posttypes() {
+global $wp_post_types;
+if ( isset( $wp_post_types[ $post_type ] ) ) {
+unset( $wp_post_types[ $post_type ] );
+return true;
+}
+return false;
+}
+endif;
+/**
+* disable comments
+*/
+function remove_menus(){
+  remove_menu_page( 'edit-comments.php' );          //Comments
+}
+add_action( 'admin_menu', 'remove_menus' );

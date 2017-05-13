@@ -956,6 +956,9 @@ p:empty {
 .home .site.container, .page-rent .site.container, .page-academy .site.container, .page-about .site.container {
 	background-color: transparent;
 	background: url(images/bg_three.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .page-buy .site.container, .page-learn .site.container, .single-instructor .site.container, .page-contact .site.container, .term-courses .site.container {
 	background-color: transparent;
@@ -1424,6 +1427,9 @@ a.btn-down, span.btn-down {
 	text-shadow: none;
 }
 }
+#instagram-home {
+
+}
 .instagram-title {
 	color: #FFF;
 	text-transform: uppercase;
@@ -1463,6 +1469,9 @@ a.btn-down, span.btn-down {
 	background-color: rgba(0,0,0,0.60);
 }
 */
+#sb_instagram {
+	padding-bottom: 100px;
+}
 #sb_instagram .sbi_photo_wrap span {
 	width: 100%;
 	height: 21px;

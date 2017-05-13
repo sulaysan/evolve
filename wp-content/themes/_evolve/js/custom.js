@@ -222,14 +222,14 @@
     var hero = {
         origin   : "top",
         distance : "24px",
-        duration : 1500,
+        duration : 2000,
         scale    : 1.05
       }
 
       var intro = {
         origin   : "bottom",
         distance : "64px",
-        duration : 900,
+        duration : 2000,
         delay    : 1500,
         scale    : 1
       }
@@ -237,17 +237,17 @@
       var github = {
         origin   : "top",
         distance : "32px",
-        duration : 600,
+        duration : 2000,
         delay    : 1800,
         scale    : 0
       }
 
-      var block = {
-        reset: true,
-        viewOffset: { top: 64 }
-      }
+  //    var block = {
+  //      reset: true,
+  //      viewOffset: { top: 64 }
+  //    }
 
-    sr.reveal(".scrollreveal", block);
-    sr.reveal("#sb_instagram", block);
+  //  sr.reveal(".scrollreveal", block);
+  //  sr.reveal("#sb_instagram", block);
 
 })()
