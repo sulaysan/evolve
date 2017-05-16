@@ -26,7 +26,7 @@ define('DB_NAME', 'evolve_dev');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'aq2JlJwrh1Sy');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'srqyzg2ryayagy4tqjsm7capm2n1btmcpjdanbnmevuo5qs86edwjq2fdbioj1ba');
-define('SECURE_AUTH_KEY',  'iiydpy6szfh72yadv8ltd1jahryhienjuzi3htqugl9wblwxirxmjbkdnwe0vbmn');
-define('LOGGED_IN_KEY',    'cpi3vdoakqd2tcr169uxxjhb3lso9rwp9okwjfodbvtvicxdklrsjhhhvdckpqlt');
-define('NONCE_KEY',        '1s7pd20gpw8vkdlelut8pdsjy1irmfi4ugngu0rkao7ur6gfurkwfjfxtgbyhxmv');
-define('AUTH_SALT',        'wsgcu2vebqxy2czkmlyndxj88wlmrau9yosznlytca33ikkn3amqba8mdtc4tydc');
-define('SECURE_AUTH_SALT', 'ugcgeojyojrzb7ojtknsw3bi00tuv72fq3qhyfgvc860gpilazgjwfpuge8e8bov');
-define('LOGGED_IN_SALT',   'dnqxezgk85ynwzk15pwkvhljbzv4tr6zkmtghusvjxbjxh6k1guhhkhrhilml6r4');
-define('NONCE_SALT',       '7o1bqjoaxu7dyghkfrm6dg2cucshvi7xmyjzueivvhhbb5elhvgbciipeiyuqwrf');
+define('AUTH_KEY',         't.V?~j,^y^mQkTvYbP<kr:c>Q.{AqE_L<Fe#nBR3y:y3PQQ+[P_B#+G*Q+p%D$lF');
+define('SECURE_AUTH_KEY',  '>rpZ@l@vi#}K*7*Y0Zrqc.n[,} w{EVx=cVL1/zoC/24nE~)y&(Wy!+Hoy4!}XT&');
+define('LOGGED_IN_KEY',    'Pq<[<_s*aUb&LSVoTlFFaR(Umg~F.a#_jPCgC+JE&O^`rR*g[xhh+5tTSB<yP0X^');
+define('NONCE_KEY',        '~Xz`7GqaRSOxG.GuiQ GzyV-F }c]VTgLeC:r0@cg/%)$^j;#kuXS6K^tyF]_:ce');
+define('AUTH_SALT',        'Q_c~x5c)@J@z|3N{W)~_.UsRxJpqKqT+v[PET~BS{@]{ui3iP<=h0_A=1U:C<xse');
+define('SECURE_AUTH_SALT', 'Jl3h/##6IY=(HDDtcvQ1I0&a}AlwDzx&FZbjPb|+na^{wWX00/=:p]e)RoKNiN5g');
+define('LOGGED_IN_SALT',   'L)w0I|2J=/DjLFm0E<.s/IfD$bo/Ktrv3N y@b}rgPZ.f LB)aPtv+{B85%6.h!q');
+define('NONCE_SALT',       'Q6s405RlX]o;%wZ?sWl{OC!8OLd[H#.Dw=|O 4Ju?q@W?:B>jao@6[Fg[FBy>Ik$');
 
 /**#@-*/
 
@@ -63,7 +63,7 @@ define('NONCE_SALT',       '7o1bqjoaxu7dyghkfrm6dg2cucshvi7xmyjzueivvhhbb5elhvgb
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wpu4_';
+$table_prefix  = 'wpvx_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -78,6 +78,7 @@ $table_prefix  = 'wpu4_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
+//define( 'WC_REMOVE_ALL_DATA', true);
 
 /* That's all, stop editing! Happy blogging. */
 
